@@ -1,0 +1,51 @@
+[class*='button--'] { display:inline-block; position:relative; font-size:12px; line-height:16px; border-width:1px; border-style:solid; border-color:#333; background:#333; color:#fff; text-transform:uppercase; letter-spacing:1px; padding:7px 10px; text-align:center; cursor:pointer; z-index:2; vertical-align:middle; white-space:nowrap; text-overflow:ellipsis; }
+
+[class*='button--'] > svg { fill:#fff; height:16px; width:16px; }
+[class*='button--']:hover { border-color:#666; background:#666; }
+[class*='button--'].circle { padding:7px; min-width:32px; }
+
+
+
+/* button text ikonnal */
+[class*='button--'].with-icon {}
+[class*='button--'].with-icon > svg { margin-right:7px; }
+
+[class*='button--'].with-icon--left > svg { margin-right:7px; }
+[class*='button--'].with-icon--right > svg { margin-left:7px; }
+
+
+
+/* nyilacskával */
+[class*='button--'].with-bottom-arrow:after { left:50%; bottom:0; margin-left:-6px; border-width:6px 6px 0 6px; border-style:solid dashed; border-color:#333 transparent; }
+[class*='button--'].with-bottom-arrow.current:after, [class*='button--'].with-bottom-arrow.active:after, [class*='button--'].with-bottom-arrow.selected:after { bottom:-5px; }
+[class*='button--'].with-bottom-arrow:hover:after { border-color:#666 transparent; }
+
+
+/* méretek */
+.button--medium { font-size:16px; line-height:28px; padding:10px 15px; }
+.button--medium > svg { height:28px; width:28px; }
+.button--medium.circle { padding:10px; min-width:50px; }
+
+.button--medium.with-icon--left > svg { margin-right:10px; }
+.button--medium.with-icon--right > svg { margin-left:10px; }
+
+
+
+
+/* anim */
+[class*='button--'], [class*='button--'].with-bottom-arrow:after
+{ -webkit-transition:0.5s ease-out; -moz-transition:0.5s ease-out; -o-transition:0.5s ease-out; -ms-transition:0.5s ease-out; transition:0.5s ease-out; }
+
+
+
+.inactive { cursor:default; opacity:.4; filter:alpha(opacity=40); -khtml-opacity:.4; -moz-opacity:.4; }
+.inactive:after { display:none; }
+
+
+
+@media (max-width: 768px){
+
+[class*='button--'].with-icon { font-size:0; letter-spacing:0; padding:7px; min-width:32px; }
+[class*='button--'].with-icon > svg { margin:0; }
+
+}

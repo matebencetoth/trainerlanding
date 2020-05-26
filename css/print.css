@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+@media print{
+
+* { color:#333!important; text-shadow:none!important; background:0!important; font-size:16px!important; line-height:20px!important; font-family:'Lato', sans-serif!important; width:100%!important; }
+header, #headline, aside, footer, svg, *:before, *:after, [class*='button--'] { display:none!important; }
+
+}
