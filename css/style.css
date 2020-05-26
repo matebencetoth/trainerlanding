@@ -10,11 +10,6 @@ body {
   color: #6b7c93;
 }
 
-
-
-
-
-
 /*===========================
 OWL
 ===========================*/
@@ -1290,7 +1285,6 @@ input[type="submit"]:hover {
 }
 
 .mchimp-name {
-  width: 130px;
   margin-left: 0;
   margin-right: 8%;
 }
@@ -1433,11 +1427,35 @@ BOOTSTRAP IMPORT
   max-width: 100%
 }
 
+.col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    column-gap: 5%;
+
+  }
+
+.col-name {
+  display: inline-flex;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: none
+}
+
 .col-email {
   display: inline-flex;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   width: 100%;
+  max-width: none
+}
+
+.col-button {
+  display: inline-flex;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
   max-width: none
 }
 
@@ -1511,6 +1529,103 @@ margin-top: 0;
   }
 
 
+  /*===========================
+  JOIN NOW CTA
+  ===========================*/
+
+  .our-monthly-membership {
+      background: #DD007D;
+      background: -webkit-linear-gradient(to left, #DD007D, #fb397d);
+      background: -webkit-linear-gradient(right, #DD007D, #fb397d);
+      background: -webkit-gradient(linear, right top, left top, from(#DD007D), to(#fb397d));
+      background: -o-linear-gradient(right, #DD007D, #fb397d);
+      background: linear-gradient(to left, #DD007D, #fb397d);
+      width: 100%;
+  }
+
+  .section_padding_50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+  }
+
+  .cta-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+  }
+
+
+  .membership-description > h1 {
+      color: #ffffff;
+      font-size: 36px;
+  }
+
+  .membership-description > p {
+      color: #ffffff;
+      margin-bottom: 0;
+  }
+
+  .get-started-button > a {
+      background: #ffffff;
+      height: 50px;
+      min-width: 155px;
+      display: inline-block;
+      text-align: center;
+      vertical-align: center;
+      line-height: 45px;
+      color: #fb397d;
+      font-weight: 600;
+      border-radius: 8px 8px 8px 8px;
+  }
+
+  .get-started-BACKUP-button > a:hover {
+      background: #5b32b4;
+      color: #fff;
+      -webkit-transition-duration: 500ms;
+      -o-transition-duration: 500ms;
+      transition-duration: 500ms;
+  }
+
+  .get-started-button {
+      text-align: right;
+  }
+
+  .get-started--BACKUP-button > a {
+  color: #37383c;
+  font-weight: 600;
+  display: inline-block;
+  border: 2px solid #fb397d;
+  height: 50px;
+  min-width: 138px;
+  line-height: 46px;
+  text-align: center;
+  border-radius: 8px 8px 8px 8px;
+  }
+
+.get-started-button > a:hover{
+  background: #afacae;
+  color: #fff;
+  border-color: transparent;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  }
+
+  .align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    box-sizing: border-box;
+
+  }
+
+
+
+}
+
+
 /*===========================
 RESPONSIVE
 ===========================*/
@@ -1522,6 +1637,13 @@ RESPONSIVE
     position: relative;
     z-index: 92;
   }
+
+  .col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    column-gap: 5%;
+}
 }
 
 @media (min-width: 2001px) and (max-width: 3000px) {
@@ -1547,6 +1669,20 @@ input[type="submit"] {
   width: 120%;
 }
 
+.col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+
+}
+
+.col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    column-gap: 5%;
+}
+
 }
 
 @media (min-width: 1301px) and (max-width: 2000px) {
@@ -1566,6 +1702,7 @@ input[type="submit"] {
   max-width: 1200px;
 }
 
+
   .col-md-4 {
       -ms-flex: 0 0 33.333333%;
       flex: 0 0 33.333333%;
@@ -1574,6 +1711,18 @@ input[type="submit"] {
 
     }
 
+    .col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+.col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    column-gap: 5%;
+}
 
   .mailchimp-table {
 width: 700px;
@@ -1581,6 +1730,14 @@ position: relative
 right: 10%;
   }
 
+.mchimp-name {
+  width: 200px;
+}
+
+.col-button {
+  width: 90%;
+
+}
 
   input[type="submit"] {
     width: 120%;
@@ -1591,6 +1748,22 @@ right: 10%;
     border-color: #b60d57;
   }
 
+.single-icon {
+margin-bottom: 25px;
+position: relative;
+right: 5%;
+bottom: 15px;
+}
+
+.single-special >h2 {
+position: relative;
+left: 5%;
+
+}
+
+.cta-container {
+  max-width: 1140px;
+}
 
 }
 
@@ -1608,12 +1781,30 @@ right: 10%;
   max-width: 960px;
 }
 
+.cta-container {
+  max-width: 960px;
+}
+
 .col-md-4 {
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
     column-gap: 5%;
   }
+
+  .col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+
+  }
+
+  .col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    column-gap: 5%;
+}
 
   .mailchimp {
     width: 600px;
@@ -1744,7 +1935,15 @@ right: 0;
 }
 
 .mchimp-tr {
-  width: 620px;
+  display: inline-block;
+  width: 120%;
+  margin: 0 auto;
+  margin-left: auto;
+
+}
+
+.col-name {
+  padding-right: 15px;
 }
 
 input[type="submit"] {
@@ -1759,13 +1958,17 @@ input[type="submit"]:hover {
 }
 
 .mchimp-name {
-  width: 120px;
+  width: 200px;
   margin-right: 8%;
 }
 
 .mchimp-email {
-  width: 180px;
+  width: 250px;
   margin-right: 12%;
+}
+
+.mchimp-button {
+  width: 200px;
 }
 
   .feature>li {
@@ -1886,6 +2089,12 @@ input[type="submit"]:hover {
     flex-direction: column;
     align-items: stretch;
   }
+
+  .cta-container {
+    max-width: 720px;
+  }
+
+
 }
 
 
@@ -1961,6 +2170,33 @@ input[type="submit"]:hover {
 
   }
 
+.col-name {
+  padding-right: 0;
+}
+
+.mchimp-name {
+  display: inline-flex;
+  -ms-flex: 0 0 100%;
+flex: 0 0 100%;
+max-width: 100%;
+margin-right: 0;
+}
+
+.mchimp-email {
+  display: inline-flex;
+  -ms-flex: 0 0 100%;
+flex: 0 0 100%;
+max-width: 100%;
+margin-right: 0;
+}
+
+.mchimp-button {
+  display: inline-flex;
+  -ms-flex: 0 0 100%;
+flex: 0 0 100%;
+max-width: 100%;
+}
+
   .mailchimp-table {
   width: 100%;
   position: relative
@@ -1968,10 +2204,15 @@ input[type="submit"]:hover {
   }
 
   .mchimp-tr {
-    width: 375px;
+    width: 100%;
     position: relative;
     left: auto;
 
+  }
+
+  .col-button {
+    position: relative;
+    right: 15%;
   }
 
   input[type="submit"] {
@@ -1985,14 +2226,29 @@ input[type="submit"]:hover {
     border-color: #b60d57;
   }
 
-  .mchimp-name {
-    width: 120px;
-    margin-right: 8%;
-  }
+  .col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
 
-  .mchimp-email {
-    width: 180px;
-    margin-right: 12%;
-  }
+}
+
+.mchimp-name {
+  width: 250px;
+}
+
+.mchimp-email {
+  width: 250px;
+}
+
+.single-icon {
+  position: relative;
+  right: 5%;
+}
+
+.single-special >h4 {
+  text-align: center;
+}
+
 
 }
